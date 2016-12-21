@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/h_vash_mou</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+         C:\Users\sotos\Desktop\www_term_project\web\pictures\
+     </param-value> 
+    </context-param>
+    <servlet>
+        <servlet-name>Signin</servlet-name>
+        <servlet-class>com.example.web.MySignInServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.example.web.MyLogInServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>create</servlet-name>
+        <servlet-class>com.example.web.My_first_create_servlet</servlet-class>
+    </servlet>
+    
+
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>com.example.web.Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Editing</servlet-name>
+        <servlet-class>com.example.web.Story_edit_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Signin</servlet-name>
+        <url-pattern>/SigninHandler</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/LoginHandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>create</servlet-name>
+        <url-pattern>/My_first_create_servlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Editing</servlet-name>
+        <url-pattern>/Story_edit_servlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

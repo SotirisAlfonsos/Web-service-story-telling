@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/www_term_project">
+    <Resource description="My DB Datasource" name="jdbc/h_vash_mou"
+        auth="Container" factory="org.apache.naming.factory.BeanFactory"
+        type="com.mchange.v2.c3p0.ComboPooledDataSource" 
+        user="alfonsos" password="alfonsos1"
+        minPoolSize="3"
+        maxPoolSize="20"
+        acquireIncrement="1" 
+        driverClass="com.mysql.jdbc.Driver" 
+        jdbcUrl="jdbc:mysql://localhost:3306/h_vash_mou"
+        testConnectionOnCheckin="true" 
+        idleConnectionTestPeriod="300"
+        maxIdleTimeExcessConnections="240"
+    />
+<!--<Resource name="jdbc/h_vash_mou" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="alfonsos" password="alfonsos1" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/h_vash_mou"/>-->
+</Context>

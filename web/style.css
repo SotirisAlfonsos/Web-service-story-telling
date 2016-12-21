@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 6, 2014, 7:01:35 PM
+    Author     : sotos
+*/
+html {
+   background-image: url("pics/stardust.png");
+}
+#main2 {
+    position:absolute;
+    left:13%; 
+    right: 13%;
+    top:0%;
+    bottom: 0%;
+    z-index: -1;  
+    border-style:outset;
+    background-image: url("pics/squared_metal.png");
+}
+
+#main {
+    position:absolute;
+    left: 13%; 
+    right: 13%;
+    padding-top:2%;
+    padding-bottom: 10%;
+    border-style:outset;
+    overflow:hidden;
+    background-image: url("pics/squared_metal.png");
+}
+
+
+p {
+    text-align: center;
+    color: dodgerblue;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+#buttons {
+   text-align: center;
+   width: 25%;
+    padding-bottom: 5%;
+}
+
+#map_canvas{
+    width:100%;
+    height:82%;
+    z-index: 1;
+}
+h1 {
+    text-align: center;
+    color: dodgerblue;
+    font-family: "Trebuchet MS", Verdana, sans-serif;  
+}
+
+#story_window {
+    position:absolute;
+    background-color: whitesmoke;
+    left:20%; 
+    right: 20%;
+    top: 62%;
+   overflow: hidden;
+    width:60%;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+#login {
+    text-align: right;
+    margin-right: 3%;
+}
+
+#text_on_story {
+    text-align: center;
+    font-style: italic;
+    width:80%;
+    font-size: 19px;
+    font-family: "Times New Roman", Times, serif; 
+}
+
+#home_image {
+    position:absolute;
+    padding:10px;
+    border-radius: 40px;
+}
+#story_image {
+    outline:  2px solid;
+    border: 8px solid ghostwhite;
+    width:60%;
+}
+#image_home {
+    border: 2px solid;
+    width:100px;
+    height:100px; 
+    border-radius: 10px;
+}
+#footer {
+    position: absolute;
+    width:100%;
+    background-color: lightgray;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-top: 1px solid gray;
+    text-align: left;
+    bottom: 0%;
+   
+}
